@@ -1,5 +1,5 @@
 async function createProduct(event) {
-    event.preventDefault(); // Evita que el formulario se envíe por defecto
+    event.preventDefault(); 
   
     const form = document.getElementById('productForm');
     const name = form.elements.name.value;
@@ -25,6 +25,5 @@ async function createProduct(event) {
     }
   }
   
-  // Escucha el evento de envío del formulario
   const form = document.getElementById('productForm');
   form.addEventListener('submit', createProduct);
